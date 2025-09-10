@@ -2,9 +2,9 @@
   "name": "tripadvisor-sync-scheduler",
   "version": "1.0.0",
   "description": "Automated daily sync scheduler for TripAdvisor reviews",
-  "main": "dist/scheduler-service-deployment.js",
+  "main": "dist/index.js",
   "scripts": {
-    "start": "node dist/scheduler-service-deployment.js",
+    "start": "node dist/index.js",
     "dev": "ts-node scheduler-service-deployment.ts",
     "build": "tsc",
     "test": "jest",
