@@ -1,0 +1,47 @@
+{
+  "name": "tripadvisor-sync-scheduler",
+  "version": "1.0.0",
+  "description": "Automated daily sync scheduler for TripAdvisor reviews",
+  "main": "dist/scheduler-service-deployment.js",
+  "scripts": {
+    "start": "node dist/scheduler-service-deployment.js",
+    "dev": "ts-node scheduler-service-deployment.ts",
+    "build": "tsc",
+    "test": "jest",
+    "lint": "eslint . --ext .ts",
+    "deploy": "npm run build && npm start"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.38.0",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "node-cron": "^3.0.2"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.14",
+    "@types/express": "^4.17.18",
+    "@types/node": "^20.8.0",
+    "@types/node-cron": "^3.0.8",
+    "eslint": "^8.50.0",
+    "jest": "^29.7.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": [
+    "tripadvisor",
+    "reviews",
+    "sync",
+    "scheduler",
+    "automation"
+  ],
+  "author": "ReviewFlow Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/reviewflow/tripadvisor-scheduler"
+  }
+}
+
